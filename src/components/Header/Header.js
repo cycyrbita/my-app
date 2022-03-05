@@ -1,16 +1,15 @@
 
-import Nav from '../Nav/Nav'
-import './Header.css'
+import React, {Component} from "react";
+import Nav from "../Nav/Nav";
 
-function Header() {
-    return (
-        <header className="header">
-            <div className='header__logo'>
-                <img src="/logo.png" alt="Логотип"/>
+class Header extends Component {
+    render() {
+        return (
+            <div className="Header">
+                <Nav />
             </div>
-            <Nav />
-        </header>
-    )
+        )
+    }
 }
 
-export default Header;
+export default Header

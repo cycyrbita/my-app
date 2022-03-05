@@ -1,11 +1,14 @@
 
-import './App.css';
-import Page from './components/Page/Page';
+import React from 'react';
+import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
     <div className="App">
-      <Page />
+      <main className="main">
+        <Header />
+      </main>
     </div>
   );
 }

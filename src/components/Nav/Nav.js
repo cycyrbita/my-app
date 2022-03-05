@@ -1,19 +1,16 @@
 
-import {Link, Outlet} from "react-router-dom"
+import React, {Component} from "react";
 
-import './Nav.css'
-
-function Nav() {
-    return (
-        <nav className="nav">
-            <div className="nav__body">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contacts">Contacts</Link>
-            </div>
-            <Outlet />
-        </nav>
-    )
+class Nav extends Component {
+    render() {
+        return (
+            <nav className="nav">
+                <a href="/" className="nav__link">Главная</a>
+                <a href="/about" className="nav__link">О нас</a>
+                <a href="/wiki" className="nav__link">База знаний</a>
+            </nav>
+        )
+    }
 }
 
 export default Nav
