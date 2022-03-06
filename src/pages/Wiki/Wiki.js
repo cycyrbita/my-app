@@ -8,8 +8,8 @@ class Wiki extends Component {
     render() {
         return (
             <React.Fragment>
-                <aside className="aside"></aside>
-                <article className="article">
+                <aside className="aside aside_left"></aside>
+                <article className="article article_intro-main">
                     <Avatars />
                 </article>
             </React.Fragment>
