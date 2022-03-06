@@ -1,13 +1,15 @@
 
 import React, {Component} from "react";
+import {Link} from "react-router-dom"
+import './Nav.scss';
 
 class Nav extends Component {
     render() {
         return (
             <nav className="nav">
-                <a href="/" className="nav__link">Главная</a>
-                <a href="/about" className="nav__link">О нас</a>
-                <a href="/wiki" className="nav__link">База знаний</a>
+                <Link to="/" className="nav__link active">Главная</Link>
+                <Link to="/about" className="nav__link">О нас</Link>
+                <Link to="/wiki" className="nav__link">База знаний</Link>
             </nav>
         )
     }
